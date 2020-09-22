@@ -1,1 +1,12 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened [fixedInViewport]="true">
+    <div class="content">
+      Sidenav content
+      <a [routerLink]="'about'">About</a>
+      <a [routerLink]="'home'">Home</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
